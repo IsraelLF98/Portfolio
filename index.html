@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!--Importar los estilos-->
+    <link rel="stylesheet" href="estilos.css">
+    <!--Importar iconos-->
+    <script src="https://kit.fontawesome.com/220cbae15d.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="img/icono.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <!--NavBar navegación del portafolio-->
+    <header>
+        <nav id="navbar">
+            <!-- Logo -->
+            <div class="logo">Lenin <span>Israel </span>Flores <span>Betancourt</span></div>
+    
+            <!-- Botón hamburguesa (solo se muestra en móviles) -->
+            <button class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+    
+            <!-- Menú de navegación -->
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <!--Inicio-->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Lenin Israel Flores Betancourt</h1>
+                    <h2>💻Ing. Sist |📊BI & An. Datos | 🌐Web Dev |🗄DBA | 🔧Mt. PCs</h2>
+                    <p>"Apasionado por la tecnología, el análisis de datos y el desarrollo web."</p>
+                    <div class="social-links">
+                        <a href="https://app.enhancv.com/share/752e2aa8/" target="_blank" title="Ver mi hoja de vida">
+                            <i class="fas fa-file-alt"></i>
+                        </a>
+                        <a href="https://wa.me/593997705273" target="_blank" title="Escríbeme por WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/lenin-israel-flores-betancourt-34180233a/" target="_blank"
+                            title="Conéctate conmigo en LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
+                        <a href="https://github.com/IsraelLF98" target="_blank" title="Revisa mis proyectos en GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="mailto:leninisrael15@gmail.com" title="Envíame un correo electrónico">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+
+
+                    </div>
+                    <a href="https://beacons.ai/israel_flores" class="btn" target="_blank">Contáctame</a>
+                </div>
+                <div class="hero-image">
+                    <img src="img/foto de perfil.jpg" alt="Foto de perfil">
+                </div>
+            </div>
+        </section>
+
+        <!--Experiencia-->
+        <section id="experiencia" class="experiencia">
+            <h2 class="section-title">Experiencia Laboral</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="date">2024 - 2025</span>
+                        <h3>Desarrollador Web, Analista de Datos y Procesos ETL</h3>
+                        <h4>Centro Médico Renacer Quito, Pichincha</h4>
+                        <p>Desarrollo de aplicación web, automatización de procesos ETL, análisis y visualización de
+                            datos.</p>
+                        <ul class="skills">
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Bootstrap</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>PostgreSQL</li>
+                            <li>ChartJS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="date">2024</span>
+                        <h3>Auditor y Técnico en Informática</h3>
+                        <h4>GAD de Tanicuchí Latacunga, Cotopaxi</h4>
+                        <p>Soporte técnico, cableado, análisis en Excel, y concienciación sobre ciberseguridad.</p>
+                        <ul class="skills">
+                            <li>Excel</li>
+                            <li>Inventario Tecnológico</li>
+                            <li>Soporte Técnico</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="date">2023 - 2024</span>
+                        <h3>Asistente de Auditoría y Soporte Técnico (Pasantías)</h3>
+                        <h4>Universidad Técnica de Cotopaxi</h4>
+                        <p>Mantenimiento de equipos, gestión de inventario, formación en buenas prácticas de seguridad.
+                        </p>
+                        <ul class="skills">
+                            <li>Inventario Tecnológico</li>
+                            <li>Soporte Técnico</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Proyectos-->
+        <section id="proyectos" class="project">
+            <h2 class="section-title">Proyectos Personales</h2>
+
+            <div class="tabs">
+                <button class="tab-button active" onclick="showTab(event, 'prog')">Programación</button>
+                <button class="tab-button" onclick="showTab(event, 'dash')">Dashboards</button>
+            </div>
+            <br>
+            <!-- TAB: Programación -->
+            <div class="tab-content active" id="prog">
+                <div class="project-container">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="img/renacer.jpg" alt="Proyecto Centro Médico">
+                        </div>
+                        <div class="project-info">
+                            <h3>Manejo de Historial Clínico</h3>
+                            <p>Aplicación web para gestión de pacientes e historial clínico. A su vez permite ver KPI'S para la toma de decisiones organizacionales mediante la libreria ChartJS.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>JavaScript</span>
+                                <span>Python</span><span>Django</span><span>PostgreSQL</span><span>ChartJS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://historial-clinico-renacer.onrender.com/" target="_blank"><i class="fas fa-link"></i>Demo</a>
+                                <a href="https://github.com/IsraelLF98/HistorialClinico" target="_blank"><i class="fab fa-github"></i>Código</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="img/registro.jpg" alt="VitalTerapiasLG">
+                        </div>
+                        <div class="project-info">
+                            <h3>Registro de Medicación</h3>
+                            <p>CRUD para registrar pacientes e información de medicamentos aplicados en suero terapia de vitamina C</p>
+                            <div class="project-tech">
+                                <span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>JavaScript</span><span>Firebase</span><span>Netlify</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://registropacienteslf.netlify.app/editar" target="_blank"><i class="fas fa-link"></i>Demo</a>
+                                <a href="https://github.com/IsraelLF98/registroPacientes" target="_blank"><i class="fab fa-github"></i>Código</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="img/terapias.jpg" alt="VitalTerapiasLG">
+                        </div>
+                        <div class="project-info">
+                            <h3>VitalTerapiasLG</h3>
+                            <p>Página informativa para empresa de terapias.</p>
+                            <div class="project-tech">
+                                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#"><i class="fas fa-link"></i>Demo</a>
+                                <a href="#"><i class="fab fa-github"></i>Código</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TAB: Dashboards -->
+            <div class="tab-content" id="dash">
+                <div class="project-container">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="img/bi.jpg" alt="Dashboard 1">
+                        </div>
+                        <div class="project-info">
+                            <h3>Dashboard 1</h3>
+                            <p>Dashboard de análisis en Power BI.</p>
+                            <div class="project-tech"><span>Power BI</span><span>DAX</span></div>
+                            <div class="project-links"><a href="#"><i class="fas fa-link"></i>Demo</a></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="img/bi.jpg" alt="Dashboard 2">
+                        </div>
+                        <div class="project-info">
+                            <h3>Dashboard 2</h3>
+                            <p>Otro dashboard en Power BI.</p>
+                            <div class="project-tech"><span>Power BI</span><span>DAX</span></div>
+                            <div class="project-links"><a href="#"><i class="fas fa-link"></i>Demo</a></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="img/excel.png" alt="Dashboard 3">
+                        </div>
+                        <div class="project-info">
+                            <h3>Dashboard 3</h3>
+                            <p>Dashboard financiero en Excel.</p>
+                            <div class="project-tech"><span>Excel</span></div>
+                            <div class="project-links"><a href="#"><i class="fas fa-link"></i>Demo</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Lenin Israel Flores Betancourt - Todos los derechos reservados</p>
+            <div class="social-links">
+                <a href="https://wa.me/593997705273" target="_blank" title="Escríbeme por WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/lenin-israel-flores-betancourt-34180233a/" target="_blank"
+                            title="Conéctate conmigo en LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
+                        <a href="https://github.com/IsraelLF98" target="_blank" title="Revisa mis proyectos en GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="mailto:leninisrael15@gmail.com" title="Envíame un correo electrónico">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script>
+        function showTab(event, tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            const buttons = document.querySelectorAll('.tab-button');
+
+            tabs.forEach(tab => tab.classList.remove('active'));
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
