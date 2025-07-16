@@ -550,3 +550,55 @@ footer {
         height: 220px;
     }
 }
+/* ================= TECNOLOGÍAS ================= */
+.tecnologias {
+    padding: 2.5rem 5%;
+    max-width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.tecnologias .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--card-bg);
+    padding: 1rem;
+    border-radius: 12px;
+    transition: var(--transition);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tech-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(108, 99, 255, 0.3);
+}
+
+.tech-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
+    object-fit: contain;
+}
+
+.tech-item span {
+    font-size: 0.9rem;
+    color: var(--light-text);
+}
+
+
