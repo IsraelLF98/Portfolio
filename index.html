@@ -4,13 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Lenin Israel Flores Betancourt</title>
     <!--Importar los estilos-->
     <link rel="stylesheet" href="estilos.css">
     <!--Importar iconos-->
     <script src="https://kit.fontawesome.com/220cbae15d.js" crossorigin="anonymous"></script>
     <!-- Favicon -->
     <link rel="icon" href="img/icono.png" type="image/x-icon">
+    
+    <!-- Estilos para dimensiones uniformes de imágenes de proyectos -->
+    <style>
+        .project-img {
+            width: 100%;
+            height: 220px; /* Tamaño uniforme para todas las tarjetas */
+            overflow: hidden;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+
+        .project-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Evita la distorsión recortando proporcionalmente */
+            object-position: center;
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -49,7 +68,7 @@
                             <i class="fas fa-file-alt"></i>
                         </a>
                         <a href="https://wa.me/593997705273" target="_blank" title="Escríbeme por WhatsApp">
-                        <i class="fab fa-whatsapp"></i>
+                            <i class="fab fa-whatsapp"></i>
                         </a>
 
                         <a href="https://www.linkedin.com/in/lenin-israel-flores-betancourt-34180233a/" target="_blank"
@@ -64,8 +83,6 @@
                         <a href="mailto:leninisrael15@gmail.com" title="Envíame un correo electrónico">
                             <i class="fas fa-envelope"></i>
                         </a>
-
-
                     </div>
                     <a href="https://beacons.ai/israel_flores" class="btn" target="_blank">Contáctame</a>
                 </div>
@@ -96,14 +113,12 @@
                         </ul>
                     </div>
                 </div>
-            <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <span class="date">2024 - 2025</span>
                         <h3>Desarrollador Web, Analista de Datos y Procesos ETL</h3>
                         <h4>Centro Médico Renacer Quito, Pichincha</h4>
-                        <p>Desarrollo de aplicación web, automatización de procesos ETL, análisis y visualización de
-                            datos.</p>
+                        <p>Desarrollo de aplicación web, automatización de procesos ETL, análisis y visualización de datos.</p>
                         <ul class="skills">
                             <li>HTML5</li>
                             <li>CSS3</li>
@@ -134,8 +149,7 @@
                         <span class="date">2023 - 2024</span>
                         <h3>Asistente de Auditoría y Soporte Técnico (Pasantías)</h3>
                         <h4>Universidad Técnica de Cotopaxi</h4>
-                        <p>Mantenimiento de equipos, gestión de inventario, formación en buenas prácticas de seguridad.
-                        </p>
+                        <p>Mantenimiento de equipos, gestión de inventario, formación en buenas prácticas de seguridad.</p>
                         <ul class="skills">
                             <li>Inventario Tecnológico</li>
                             <li>Soporte Técnico</li>
@@ -169,10 +183,11 @@
                 <div class="tech-item"><img src="img/github.svg" alt="GitHub"><span>GitHub</span></div>
                 <div class="tech-item"><img src="img/linux.svg" alt="Linux"><span>Linux</span></div>
                 <div class="tech-item"><img src="img/windows.png" alt="Windows"><span>Windows</span></div>
-                <div class="tech-item"><img src="img/powerbi.png" alt="Windows"><span>Power BI</span></div>
-                <div class="tech-item"><img src="img/excel.png" alt="Windows"><span>Excel</span></div>
+                <div class="tech-item"><img src="img/powerbi.png" alt="Power BI"><span>Power BI</span></div>
+                <div class="tech-item"><img src="img/excel.png" alt="Excel"><span>Excel</span></div>
             </div>
         </section>
+
         <!--Proyectos-->
         <section id="proyectos" class="project">
             <h2 class="section-title">Proyectos Personales</h2>
@@ -204,7 +219,7 @@
                     </div>
                     <div class="project-card">
                         <div class="project-img">
-                            <img src="img/registro.jpg" alt="VitalTerapiasLG">
+                            <img src="img/registro.jpg" alt="Registro de Medicación">
                         </div>
                         <div class="project-info">
                             <h3>Registro de Medicación</h3>
